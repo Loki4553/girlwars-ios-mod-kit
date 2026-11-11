@@ -2,7 +2,7 @@ import os, shutil
 from kit_common import RefConverter, find_mods, load_in_app, KIT, REF
 OUT = os.path.join(KIT, "iPhone Ready")
 os.system("")
-RED, END = "\x1b[91m", "\x1b[0m"
+GREEN, BLUE, END = "\x1b[92m", "\x1b[94m", "\x1b[0m"
 in_app, src = load_in_app()
 if in_app is None or not os.path.isfile(REF):
     print("STOP: run 'Make Modded IPA.bat' first.")
@@ -30,20 +30,19 @@ for full, rel in find_mods(conv.prefix.keys() | in_app):
     ok += 1
     if rel in in_app:
         also_app.append(rel)
-        print(f"{RED}BUILT INTO THE IPA  {rel}  -> use 'Make Modded IPA'{END}", flush=True)
+        print(f"{GREEN}OK {rel} ({note}){END}  {BLUE}INSIDE THE IPA{END}", flush=True)
     else:
-        print("OK", rel, f"({note})", flush=True)
+        print(f"{GREEN}OK {rel} ({note}){END}", flush=True)
 print(f"\nDONE: {ok} converted, {failed} failed.")
 if ok:
     print("Now copy the files from the 'iPhone Ready\\download' folder into the SAME subfolder of")
     print("Girl Wars > Documents > download on your iPhone (one subfolder at a time, choose Replace).")
     print("NEVER replace the whole 'download' folder - that deletes the game's files.")
 if also_app:
-    print(RED)
-    print(f"{len(also_app)} mod(s) are for files BUILT INTO THE IPA. Copying them to the phone is not enough:")
+    print()
+    print(f"{len(also_app)} mod(s) are for files {BLUE}INSIDE THE IPA{END}:")
     for r in also_app:
         print("   -", r)
-    print("-> Drag your decrypted IPA onto 'Make Modded IPA.bat' and install the new MODDED.ipa")
-    print("   with Sideloadly. Keep ALL your built-in mods in 'Put mods here' when you do:")
-    print("   the new IPA only gets the ones that are in there.")
-    print("-> Copy them to the phone too ONLY if the phone asks to Replace that file." + END)
+    print("-> They go into the game with 'Make Modded IPA' (then install that IPA with Sideloadly).")
+    print("   If they were in 'Put mods here' when you made your MODDED.ipa, they are already in it.")
+    print("-> Copy them to the phone too ONLY if the phone asks to Replace that file.")

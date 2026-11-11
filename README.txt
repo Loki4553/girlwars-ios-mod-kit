@@ -115,7 +115,7 @@ STEP 2 - CONVERT AND COPY THE MODS
    look at that character or skin once so the game downloads it (you may need to
    unlock it first), close the game, and copy the mod again.
 
-   Files shown in RED as "BUILT INTO THE IPA" go into the app with STEP 1.
+   Files marked "INSIDE THE IPA" (in blue) go into the app with STEP 1.
    Copy one to the phone only if the phone already has that file (it asks to
    Replace). If the phone doesn't have it, skip it.
 
@@ -154,7 +154,7 @@ LATER
 -----
 - New mod: put it in "Put mods here" and run "Convert Mods for iPhone".
   - Normal file: copy just that file to the phone.
-  - Shown in RED as "BUILT INTO THE IPA": run STEP 1 again and install the new MODDED.ipa with
+  - Marked "INSIDE THE IPA" (in blue): run STEP 1 again and install the new MODDED.ipa with
     Sideloadly. It installs over the old one and keeps your game data.
 - A different skin for the same file: replace the mod in "Put mods here", then do
   the same as for a new mod.

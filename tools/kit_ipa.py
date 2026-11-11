@@ -3,6 +3,8 @@ from kit_common import g, find_mods, RefConverter, save_in_app, build_reference
 SRC = sys.argv[1]
 OUT = os.path.splitext(SRC)[0] + " - MODDED.ipa"
 APP = "Payload/GirlWars.app/Data/Raw/AssetBundles/download/"
+os.system("")
+GREEN, END = "\x1b[92m", "\x1b[0m"
 
 class IpaConverter(g.Converter):
     def __init__(self, z, ref):
@@ -42,7 +44,7 @@ with zipfile.ZipFile(SRC) as zin:
     for full, rel in find_mods(ref.prefix.keys() | in_app):
         if APP + rel in names:
             ready[APP + rel], note = conv.convert(open(full, "rb").read(), rel)
-            print("OK (into app)", rel, note, flush=True)
+            print(f"{GREEN}OK (into app) {rel} {note}{END}", flush=True)
     print(len(ready), "mods go into the app itself (the rest are copied to the phone with 'Convert Mods for iPhone').")
     INFO = "Payload/GirlWars.app/Info.plist"
     raw = zin.read(INFO)
