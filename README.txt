@@ -78,6 +78,9 @@ STEP 1 - MAKE AND INSTALL THE MODDED GAME
    - puts in the mods for built-in files (for example some Dates, like Chacha's).
    With no mods in "Put mods here", it only turns on File Sharing and saves that data.
 
+   !! The new IPA only has the built-in mods that are in "Put mods here" RIGHT NOW.
+      Keep all your built-in mods in there.
+
 2. Paid account only: delete Girl Wars from your iPhone (only the first time).
    Free Apple ID: keep the real game. The modded one installs as a second app.
 
@@ -112,7 +115,7 @@ STEP 2 - CONVERT AND COPY THE MODS
    look at that character or skin once so the game downloads it (you may need to
    unlock it first), close the game, and copy the mod again.
 
-   Files marked [BUILT INTO APP] are already in the app thanks to STEP 1.
+   Files shown in RED as "BUILT INTO THE IPA" go into the app with STEP 1.
    Copy one to the phone only if the phone already has that file (it asks to
    Replace). If the phone doesn't have it, skip it.
 
@@ -151,7 +154,7 @@ LATER
 -----
 - New mod: put it in "Put mods here" and run "Convert Mods for iPhone".
   - Normal file: copy just that file to the phone.
-  - Marked [BUILT INTO APP]: run STEP 1 again and install the new MODDED.ipa with
+  - Shown in RED as "BUILT INTO THE IPA": run STEP 1 again and install the new MODDED.ipa with
     Sideloadly. It installs over the old one and keeps your game data.
 - A different skin for the same file: replace the mod in "Put mods here", then do
   the same as for a new mod.
