@@ -31,7 +31,7 @@ You then install the modded IPA with Sideloadly and copy the converted files to 
 
 ## Quick start
 
-1. Download this repository (**Code → Download ZIP**) and extract it.
+1. Download the zip from **[Releases](../../releases/latest)** and extract it.
 2. Put your mod files in `Put mods here`.
 3. Drag your decrypted IPA onto **`Make Modded IPA.bat`**. Install the `- MODDED.ipa` it makes
    with Sideloadly.
