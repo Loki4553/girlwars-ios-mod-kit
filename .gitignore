@@ -1,0 +1,13 @@
+# created on the user's PC, never uploaded
+tools/.venv/
+tools/__pycache__/
+tools/in_app.txt
+tools/ios_ref.zip
+tools/ios_ref.zip.part
+iPhone Ready/
+*.ipa
+*.ipa.part
+
+# mods are never uploaded, only the placeholder
+Put mods here/*
+!Put mods here/PUT MOD FILES HERE.txt

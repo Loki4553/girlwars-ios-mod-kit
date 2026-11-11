@@ -1,0 +1,3 @@
+Put your Android Girl Wars mod files (.assetbundle) in this folder.
+You can drop them in loose; the kit finds the right game folder by itself.
+See README.txt for the full guide.
